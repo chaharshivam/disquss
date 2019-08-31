@@ -1,0 +1,68 @@
+.signin-container {
+    font-family: $rubik;
+    padding: 2rem 0;
+    margin-top: 5%;
+
+    input {
+        padding: 10px;
+        background: #FAFAFA;
+        width: 100%;
+        border: 1px solid $lightGrey;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+    .submit {
+        padding: 12px;
+        color: $white;
+        background: $blue;
+        width: 55%;
+        border-radius: 50px;
+    }
+    label {
+        color: $greySecondary;
+    }
+    h6 {
+        font-size: 16px;
+        margin: 15px 0;
+        font-weight: 700;
+    }
+    .signin-image {
+        margin-top: 20px;
+    }
+    img {
+        transform: scaleY(1.2);
+    }
+    .third-party-auth {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        p {
+            font-size: 20px;
+        }
+        .google-icon {
+            color: #EA4332;
+        }
+        .fb-icon {
+            color: #4267B2;
+        }
+        .twitter-icon {
+            color: #1EA1F2;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .signin-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .signin-form{
+        width: 50%;
+        order: 2;
+    }
+    .signin-image {
+        width: 50%;
+    }
+}
