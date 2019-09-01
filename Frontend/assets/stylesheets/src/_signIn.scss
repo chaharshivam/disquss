@@ -19,6 +19,8 @@
         background: $blue;
         width: 55%;
         border-radius: 50px;
+        display: block;
+        margin: 0 auto;
     }
     label {
         color: $greySecondary;
@@ -34,12 +36,17 @@
     }
     .signin-form {
         width: 100%;
+        order: 2;
+    }
+    .divider {
+        text-align: center;
+        margin: 20px 0;
     }
     .third-party-auth {
         align-items: baseline;
-
+        justify-content: space-evenly;
         p {
-            font-size: 20px;
+            font-size: 32px;
         }
         .google-icon {
             color: #EA4332;
@@ -61,7 +68,7 @@
     .singin-image{
         width: 50%;
     }
-    .signin-form {
-        order: 2;
-    }
+    // .signin-form {
+    //     order: 2;
+    // }
 }

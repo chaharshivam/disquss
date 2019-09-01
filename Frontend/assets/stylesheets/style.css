@@ -167,7 +167,9 @@ p {
     color: #FEFEFE;
     background: #261CFA;
     width: 55%;
-    border-radius: 50px; }
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto; }
   .signin-container label {
     color: #403B35; }
   .signin-container h6 {
@@ -178,11 +180,16 @@ p {
     margin-top: 20px;
     width: 100%; }
   .signin-container .signin-form {
-    width: 100%; }
+    width: 100%;
+    order: 2; }
+  .signin-container .divider {
+    text-align: center;
+    margin: 20px 0; }
   .signin-container .third-party-auth {
-    align-items: baseline; }
+    align-items: baseline;
+    justify-content: space-evenly; }
     .signin-container .third-party-auth p {
-      font-size: 20px; }
+      font-size: 32px; }
     .signin-container .third-party-auth .google-icon {
       color: #EA4332; }
     .signin-container .third-party-auth .fb-icon {
@@ -195,6 +202,4 @@ p {
     flex-wrap: nowrap; }
   .signin-form,
   .singin-image {
-    width: 50%; }
-  .signin-form {
-    order: 2; } }
+    width: 50%; } }
