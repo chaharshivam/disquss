@@ -219,15 +219,12 @@ body {
     .nav-list a:hover {
       color: #5C5D5D; }
 
-.header-btn {
-  display: none;
-  position: absolute;
-  left: 66%;
-  top: 15.25%;
-  z-index: 100; }
-  .header-btn a {
-    margin: 0.25rem;
-    width: 80%; }
+.nav-item {
+  padding: 0.25rem; }
+  .nav-item a.btn {
+    color: rgba(10, 10, 10, 0.7); }
+  .nav-item a.btn:hover {
+    color: #FEFEFE; }
 
 .drop {
   color: rgba(10, 10, 10, 0.8);

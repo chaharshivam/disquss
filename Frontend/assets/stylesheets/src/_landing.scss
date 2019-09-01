@@ -52,16 +52,14 @@
     }
 }
 
-.header-btn {
-    display: none;
-    position: absolute;
-    left: 66%;
-    top: 15.25%;
-    z-index: 100;
+.nav-item {
+    padding: 0.25rem;
+    a.btn {
+        color: rgba($color: $black, $alpha: 0.7);
+    }
 
-    a {
-        margin: 0.25rem;
-        width: 80%;
+    a.btn:hover {
+        color: $white;
     }
 }
 
