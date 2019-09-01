@@ -31,10 +31,6 @@
     h1 {
         font-size: 2.25rem;
     }
-
-    span {
-        letter-spacing: -2px;
-    }
 }
 
 .nav-list {
@@ -85,7 +81,6 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
 }
 
 // Hero styles
-
 .hero {
     color: rgba($color: $black, $alpha: 0.9);
     padding: 0;

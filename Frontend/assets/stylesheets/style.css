@@ -174,7 +174,8 @@ body {
   color: rgba(10, 10, 10, 0.7);
   letter-spacing: 0.5px;
   font-size: 0.95rem;
-  font-weight: 700; }
+  font-weight: 700;
+  cursor: pointer; }
   .btn:hover {
     color: #FEFEFE;
     background: rgba(38, 28, 250, 0.7);
@@ -206,9 +207,6 @@ body {
 
 .logo h1 {
   font-size: 2.25rem; }
-
-.logo span {
-  letter-spacing: -2px; }
 
 .nav-list {
   display: none;

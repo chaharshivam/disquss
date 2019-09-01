@@ -28,7 +28,7 @@ body {
     letter-spacing: 0.5px;
     font-size: 0.95rem;
     font-weight: 700;
-
+    cursor: pointer;
     &:hover {
         color: $white;
         background: rgba($color: $blue, $alpha: 0.7);
