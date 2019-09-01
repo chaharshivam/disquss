@@ -153,7 +153,8 @@ p {
 .signin-container {
   font-family: "Rubik", sans-serif;
   padding: 2rem 0;
-  margin-top: 5%; }
+  margin-top: 5%;
+  flex-wrap: wrap; }
   .signin-container input {
     padding: 10px;
     background: #FAFAFA;
@@ -174,12 +175,11 @@ p {
     margin: 15px 0;
     font-weight: 700; }
   .signin-container .signin-image {
-    margin-top: 20px; }
-  .signin-container img {
-    transform: scaleY(1.2); }
+    margin-top: 20px;
+    width: 100%; }
+  .signin-container .signin-form {
+    width: 100%; }
   .signin-container .third-party-auth {
-    display: flex;
-    justify-content: space-between;
     align-items: baseline; }
     .signin-container .third-party-auth p {
       font-size: 20px; }
@@ -192,11 +192,9 @@ p {
 
 @media all and (min-width: 768px) {
   .signin-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    flex-wrap: nowrap; }
+  .signin-form,
+  .singin-image {
+    width: 50%; }
   .signin-form {
-    width: 50%;
-    order: 2; }
-  .signin-image {
-    width: 50%; } }
+    order: 2; } }
