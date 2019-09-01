@@ -389,3 +389,54 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
     line-height: 1.75; }
   .hero-image {
     width: 100%; } }
+
+* {
+  box-sizing: border-box; }
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90%; }
+  .slider .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; }
+  .slider .slides::-webkit-scrollbar {
+    display: none; }
+  .slider .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transform-origin: center center;
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/images/test.jpeg");
+    background-size: cover;
+    background-position: center; }
+    .slider .slides > div p {
+      position: absolute;
+      top: 20px;
+      color: #FEFEFE;
+      font-size: 20px;
+      font-weight: bold; }
+    .slider .slides > div small {
+      position: absolute;
+      bottom: 20px;
+      color: #FEFEFE;
+      font-size: 15px;
+      font-weight: bold; }
+  @media all and (min-width: 768px) {
+    .slider .slides > div {
+      width: 30%; } }
