@@ -1,3 +1,4 @@
+// Header styles
 .header {
     width: 100%;
     padding: 1rem;
@@ -25,27 +26,29 @@
         font-family: $montserret;
         color: rgba($color: $black, $alpha: 0.8);
         text-decoration: underline $blue;
-        letter-spacing: 1px;
     }
 
     h1 {
         font-size: 2.25rem;
+    }
+
+    span {
+        letter-spacing: -2px;
     }
 }
 
 .nav-list {
     display: none;
     width: 100%;
-    background: rgba($color: $voilet, $alpha: 0.3);
+    background: rgba($color: $voilet, $alpha: 1.0);
     margin-top: 0.5rem;
     padding: 2rem 1rem;
     position: absolute;
     left: 0;
     top: 10%;
     a {
-        color: $lightGrey;
+        color: $white;
         letter-spacing: 1px;
-        
         &:hover {
             color: $grey;
         }
@@ -56,6 +59,7 @@
     padding: 0.25rem;
     a.btn {
         color: rgba($color: $black, $alpha: 0.7);
+        margin-right: 0.5rem;
     }
 
     a.btn:hover {
@@ -80,7 +84,47 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
     display: block;
 }
 
+// Hero styles
+
+.hero {
+    color: rgba($color: $black, $alpha: 0.9);
+    padding: 0;
+    max-width: 90%;
+}
+
+.hero-container {
+    flex-direction: column-reverse;
+}
+
+.hero-title {
+    font-weight: 500;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.hero-paragraph {
+    padding: 0.75rem;
+    letter-spacing: 1px;
+    color: rgba($color: $black, $alpha: 0.7);
+}
+
+.hero-button {
+    padding: 0.5rem;
+    a {
+        color: rgba($color: $black, $alpha: 0.8);
+        width: 35%;
+        margin-right: 0.5rem;
+    }
+}
+
+.hero-image-container {
+    img {
+        height: 40vh;
+    }
+}
+
 @media all and (min-width: 768px) {
+    // Header
     .header {
         max-width: 90%;
         margin: 0 auto;
@@ -103,7 +147,9 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
         background: none;
         padding: 0;
         margin: 0;
-
+        a {
+            color: $lightGrey;
+        }
         a.btn {
             color: rgba($color: $black, $alpha: 0.7);
         }
@@ -118,4 +164,30 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
         padding: 0 0.5rem;
     }
     
+    // Hero
+    .hero {
+        margin-top: 5%;
+        max-width: 80%;
+    }
+
+    .hero-container {
+        flex-direction: row;
+    }
+
+    .hero-description {
+        width: 50%;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-paragraph {
+        margin-bottom: 1rem;
+        line-height: 1.75;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
 }
