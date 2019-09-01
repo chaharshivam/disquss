@@ -64,7 +64,7 @@ textarea {
 
 /*Base styles*/
 html {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5; }
 
 body {
@@ -103,6 +103,10 @@ p {
 
 .text-center {
   text-align: center; }
+
+@media all and (min-width: 768px) {
+  html {
+    font-size: 16px; } }
 
 /*Flex properties*/
 .flex-between {
@@ -156,7 +160,7 @@ body {
 
 .active {
   color: rgba(10, 10, 10, 0.75) !important;
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .btn {
   border: 2px solid rgba(159, 159, 159, 0.3); }
@@ -198,23 +202,25 @@ body {
 .logo a {
   font-family: "Montserrat", sans-serif;
   color: rgba(10, 10, 10, 0.8);
-  text-decoration: underline #261CFA;
-  letter-spacing: 1px; }
+  text-decoration: underline #261CFA; }
 
 .logo h1 {
   font-size: 2.25rem; }
 
+.logo span {
+  letter-spacing: -2px; }
+
 .nav-list {
   display: none;
   width: 100%;
-  background: rgba(186, 165, 213, 0.3);
+  background: #baa5d5;
   margin-top: 0.5rem;
   padding: 2rem 1rem;
   position: absolute;
   left: 0;
   top: 10%; }
   .nav-list a {
-    color: #9F9F9F;
+    color: #FEFEFE;
     letter-spacing: 1px; }
     .nav-list a:hover {
       color: #5C5D5D; }
@@ -222,7 +228,8 @@ body {
 .nav-item {
   padding: 0.25rem; }
   .nav-item a.btn {
-    color: rgba(10, 10, 10, 0.7); }
+    color: rgba(10, 10, 10, 0.7);
+    margin-right: 0.5rem; }
   .nav-item a.btn:hover {
     color: #FEFEFE; }
 
@@ -238,6 +245,34 @@ input[type="checkbox"]:checked ~ .nav-list {
 
 input[type="checkbox"]:checked ~ .nav-list + .header-btn {
   display: block; }
+
+.hero {
+  color: rgba(10, 10, 10, 0.9);
+  padding: 0;
+  max-width: 90%; }
+
+.hero-container {
+  flex-direction: column-reverse; }
+
+.hero-title {
+  font-weight: 500;
+  padding: 0.5rem;
+  letter-spacing: 1px; }
+
+.hero-paragraph {
+  padding: 0.75rem;
+  letter-spacing: 1px;
+  color: rgba(10, 10, 10, 0.7); }
+
+.hero-button {
+  padding: 0.5rem; }
+  .hero-button a {
+    color: rgba(10, 10, 10, 0.8);
+    width: 35%;
+    margin-right: 0.5rem; }
+
+.hero-image-container img {
+  height: 40vh; }
 
 @media all and (min-width: 768px) {
   .header {
@@ -256,10 +291,26 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
     background: none;
     padding: 0;
     margin: 0; }
+    .nav-list a {
+      color: #9F9F9F; }
     .nav-list a.btn {
       color: rgba(10, 10, 10, 0.7); }
     .nav-list a.btn:hover {
       color: #FEFEFE; }
   .nav-item {
     display: inline-block;
-    padding: 0 0.5rem; } }
+    padding: 0 0.5rem; }
+  .hero {
+    margin-top: 5%;
+    max-width: 80%; }
+  .hero-container {
+    flex-direction: row; }
+  .hero-description {
+    width: 50%; }
+  .hero-title {
+    font-size: 2.25rem; }
+  .hero-paragraph {
+    margin-bottom: 1rem;
+    line-height: 1.75; }
+  .hero-image {
+    width: 100%; } }
