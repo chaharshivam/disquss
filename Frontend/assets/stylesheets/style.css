@@ -154,60 +154,6 @@ p {
   margin: 0 auto;
   padding: 2rem; }
 
-.signin-container {
-  font-family: "Rubik", sans-serif;
-  padding: 2rem 0;
-  margin-top: 5%;
-  flex-wrap: wrap; }
-  .signin-container input {
-    padding: 10px;
-    background: #FAFAFA;
-    width: 100%;
-    border: 1px solid #9F9F9F;
-    border-radius: 2px;
-    margin-bottom: 15px; }
-  .signin-container .submit {
-    padding: 12px;
-    color: #FEFEFE;
-    background: #261CFA;
-    width: 55%;
-    border-radius: 50px;
-    display: block;
-    margin: 0 auto; }
-  .signin-container label {
-    color: #403B35; }
-  .signin-container h6 {
-    font-size: 16px;
-    margin: 15px 0;
-    font-weight: 700; }
-  .signin-container .signin-image {
-    margin-top: 20px;
-    width: 100%; }
-  .signin-container .signin-form {
-    width: 100%;
-    order: 2; }
-  .signin-container .divider {
-    text-align: center;
-    margin: 20px 0; }
-  .signin-container .third-party-auth {
-    align-items: baseline;
-    justify-content: space-evenly; }
-    .signin-container .third-party-auth p {
-      font-size: 32px; }
-    .signin-container .third-party-auth .google-icon {
-      color: #EA4332; }
-    .signin-container .third-party-auth .fb-icon {
-      color: #4267B2; }
-    .signin-container .third-party-auth .twitter-icon {
-      color: #1EA1F2; }
-
-@media all and (min-width: 768px) {
-  .signin-container {
-    flex-wrap: nowrap; }
-  .signin-form,
-  .singin-image {
-    width: 50%; } }
-
 body {
   font-family: "Rubik", sans-serif;
   background: #FEFEFE; }
@@ -298,6 +244,108 @@ input[type="checkbox"]:checked ~ .nav-list {
 input[type="checkbox"]:checked ~ .nav-list + .header-btn {
   display: block; }
 
+.header-icons i {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #FEFEFE; }
+  .header-icons i:hover {
+    color: #5C5D5D; }
+
+.avatar {
+  border: 2px solid #FEFEFE;
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 33px;
+  margin-top: -4px; }
+  .avatar:hover {
+    border-color: #5C5D5D; }
+
+@media all and (min-width: 768px) {
+  .header {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem; }
+  .search {
+    width: 30%;
+    padding: 0.25rem 0.75rem; }
+  .drop {
+    display: none; }
+  .nav-list {
+    display: block;
+    justify-content: space-evenly;
+    position: initial;
+    background: none;
+    padding: 0;
+    margin: 0; }
+    .nav-list a {
+      color: #9F9F9F; }
+    .nav-list a.btn {
+      color: rgba(10, 10, 10, 0.7); }
+    .nav-list a.btn:hover {
+      color: #FEFEFE; }
+  .nav-item {
+    display: inline-block;
+    padding: 0 0.5rem; }
+  .header-icons i {
+    color: #9F9F9F; }
+  .avatar {
+    border: 2px solid rgba(159, 159, 159, 0.7); } }
+
+.signin-container {
+  font-family: "Rubik", sans-serif;
+  padding: 2rem 0;
+  margin-top: 5%;
+  flex-wrap: wrap; }
+  .signin-container input {
+    padding: 10px;
+    background: #FAFAFA;
+    width: 100%;
+    border: 1px solid #9F9F9F;
+    border-radius: 2px;
+    margin-bottom: 15px; }
+  .signin-container .submit {
+    padding: 12px;
+    color: #FEFEFE;
+    background: #261CFA;
+    width: 55%;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto; }
+  .signin-container label {
+    color: #403B35; }
+  .signin-container h6 {
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 700; }
+  .signin-container .signin-image {
+    margin-top: 20px;
+    width: 100%; }
+  .signin-container .signin-form {
+    width: 100%;
+    order: 2; }
+  .signin-container .divider {
+    text-align: center;
+    margin: 20px 0; }
+  .signin-container .third-party-auth {
+    align-items: baseline;
+    justify-content: space-evenly; }
+    .signin-container .third-party-auth p {
+      font-size: 32px; }
+    .signin-container .third-party-auth .google-icon {
+      color: #EA4332; }
+    .signin-container .third-party-auth .fb-icon {
+      color: #4267B2; }
+    .signin-container .third-party-auth .twitter-icon {
+      color: #1EA1F2; }
+
+@media all and (min-width: 768px) {
+  .signin-container {
+    flex-wrap: nowrap; }
+  .signin-form,
+  .singin-image {
+    width: 50%; } }
+
 .hero {
   color: rgba(10, 10, 10, 0.9);
   padding: 0;
@@ -327,31 +375,6 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
   height: 40vh; }
 
 @media all and (min-width: 768px) {
-  .header {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 1rem; }
-  .search {
-    width: 30%;
-    padding: 0.25rem 0.75rem; }
-  .drop {
-    display: none; }
-  .nav-list {
-    display: block;
-    justify-content: space-evenly;
-    position: initial;
-    background: none;
-    padding: 0;
-    margin: 0; }
-    .nav-list a {
-      color: #9F9F9F; }
-    .nav-list a.btn {
-      color: rgba(10, 10, 10, 0.7); }
-    .nav-list a.btn:hover {
-      color: #FEFEFE; }
-  .nav-item {
-    display: inline-block;
-    padding: 0 0.5rem; }
   .hero {
     margin-top: 5%;
     max-width: 80%; }
