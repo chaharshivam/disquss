@@ -3,3 +3,35 @@
     margin: 0 auto;
     padding: 2rem;
 }
+
+body {
+    font-family: $rubik;
+    background: $white;
+}
+
+// active class for selected links on header
+.active {
+    color: rgba($color: $black, $alpha: 0.75) !important;
+    font-weight: 700;
+}
+
+// general button class
+%outline {
+    border: 2px solid rgba($color: $lightGrey, $alpha: 0.3);
+}
+
+.btn {
+    @extend %outline;
+    @include border-radius(0.35rem);
+    padding: 0.25rem 1rem;
+    color: rgba($color: $black, $alpha: 0.7);
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    &:hover {
+        color: $white;
+        background: rgba($color: $blue, $alpha: 0.7);
+        border-color: rgba($color: $blue, $alpha: 0.2);
+    }
+}
