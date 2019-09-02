@@ -1,0 +1,88 @@
+.topic {
+    margin-top: 1rem;
+    .wrapper {
+        max-width: 90%;
+        padding: 0;
+    }
+}
+
+.tag {
+    @include border-radius(0.5rem);
+    background: rgba($color: $lightGrey, $alpha: 0.1);
+    color: $lightGrey;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    letter-spacing: 1px;
+}
+
+.discussion-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba($color: $black, $alpha: 0.9);
+    letter-spacing: 1px;
+}
+
+.links {
+    padding: 1rem 0;
+}
+
+.link {
+    a {
+        color: $lightGrey;
+        &:hover {
+            color: $grey;
+        }
+    }
+}
+
+.link:first-child {
+    a {
+        color: $voilet;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+.post {
+    span {
+        padding: 0.25rem;
+        font-weight: 700;
+        color: rgba($color: $black, $alpha: 0.8);
+    }
+    padding: 1rem 0;
+}
+
+.posted-when {
+    font-size: 0.75rem;
+    font-weight: 500 !important;
+    color: $grey !important;
+}
+
+.discussion-description {
+    line-height: 1.75;
+    color: rgba($color: $black, $alpha: 0.8);
+}
+
+.post-comment {
+    padding: 1.5rem 0;
+    a {
+        align-self: flex-start;
+        margin-right: 0.5rem;
+    }
+}
+.comment {
+    padding: 0.5rem;
+    @extend %outline;
+    @include border-radius(0.5rem);
+}
+
+.all-comments {
+    margin-top: 1rem;
+    .wrapper {
+        max-width: 90%;
+        padding: 0;
+    }
+}
+

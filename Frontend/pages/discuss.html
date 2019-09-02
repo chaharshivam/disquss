@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discussion</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8bc5acd820.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Rubik:400,700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="flex-between header-container">
+            <div class="logo">
+                <a href="#">
+                    <h1>
+                        DQ
+                    </h1>
+                </a>
+            </div>
+            <div class="search">
+                <form action="#" method="POST">
+                    <input type="text" name="search" placeholder="Search...">
+                </form>
+            </div>
+            <nav class="navbar flex-between">
+                <label class="drop" for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input type="checkbox" name="checkbox" id="check">
+                <ul class="nav-list flex-between">
+                    <li class="nav-item">
+                        <a href="#" class="active">Feed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="header-icons">
+                            <i class="far fa-comments"></i>
+                            <i class="far fa-bell"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="user-info">
+                            <img class="avatar" src="../assets/resources/images/male-avatar.svg" alt="avatar">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="topic">
+            <div class="wrapper">
+                <div class="tags">
+                    <ul class="tags-list flex-start">
+                        <li class="tag">
+                            <span>
+                                community
+                            </span>
+                        </li>
+                        <li class="tag">
+                            <span>
+                                disquss
+                            </span>
+                        </li>
+                        <li class="tag">
+                            <span>...</span>
+                        </li>
+                    </ul>
+                </div>
+                <article class="discussion">
+                    <h1 class="discussion-title">How would you describe the platform we're creating for public and
+                        private discussions?</h1>
+                    <nav class="discuss-nav">
+                        <ul class="links flex-between">
+                            <li class="link">
+                                <a href="#">
+                                    <span>Back to Community</span>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#">
+                                    <span>Mute</span>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#">
+                                    <span>Edit</span>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#">
+                                    <span>Report</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <header class="discussion-user">
+                            <div class="post flex-around">
+                                <a href="#" class="user-info">
+                                    <img class="avatar" src="../assets/resources/images/male-avatar.svg" alt="avatar">
+                                </a>
+                                <span class="posted-by">Shivam Chahar</span>
+                                <span class="posted-when">3 days ago</span>
+                            </div>
+                        </header>
+                        <p class="discussion-description">
+                            Imagine you are planning for an event and you need suggestions for music, food,
+                            decoration and all sorts of things. You can start a private discussion with your friends
+                            realted to that event and boom! Now you have so many ideas.
+                            <br>
+                            Disquss is not just made for casual discussions but also for imporatant topics like
+                            Global Warming, Deforestation or maybe just learning new things or asking questions.
+                            <br>
+                            Share your views!
+                        </p>
+                    </div>
+                </article>
+
+                <div class="post-comment flex-start">
+                    <a href="#" class="user-info">
+                        <img class="avatar" src="../assets/resources/images/male-avatar.svg" alt="avatar">
+                    </a>
+                    <form action="#" method="POST" class="comment-form">
+                        <textarea name="comment" class="comment" cols="30" rows="10" placeholder="Post your reply..."></textarea>
+                        <input type="submit" class="btn btn-primary" value="Post Comment">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="all-comments">
+            <div class="wrapper">
+                <h5>32 Comments</h5>
+
+                <div class="comment-replies">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>

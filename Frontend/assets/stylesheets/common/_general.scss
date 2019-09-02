@@ -35,3 +35,9 @@ body {
         border-color: rgba($color: $blue, $alpha: 0.2);
     }
 }
+
+.btn-primary {
+    color: $white;
+    background: rgba($color: $blue, $alpha: 0.7);
+    border-color: rgba($color: $blue, $alpha: 0.2);
+}
