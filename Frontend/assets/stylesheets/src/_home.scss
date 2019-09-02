@@ -67,3 +67,101 @@
         }
     }
 }
+
+.content {
+    width: 90%;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    .trending {
+        width: 100%;
+        h5 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: $lightGrey;
+        }
+    }
+    .single-topic {
+        margin: 10px 0;
+        img {
+            width: 35px;
+            height: auto;
+        }
+        .topic-name {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .fire-icon {
+            font-size: 18px;
+            color: rgb(255, 255, 0);
+        }
+    }
+
+    .discussions {
+        width: 100%;
+        margin: 20px 0;
+        h5 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: $lightGrey;
+        }
+        .new-discussion-btn {
+            padding: 12px;
+            color: $white;
+            font-weight: bold;
+            background: $blue;  
+            border-radius: 50px;
+            display: block;
+            width: 100%;
+            // margin: 0 auto;
+        }
+        .single-discuss {
+            flex-wrap: wrap;
+            margin: 20px 0;
+            img {
+                width: 70px;
+            }
+            div {
+                width: 100%;
+                margin: 5px 0;
+                p {
+                    color: $lightGrey;
+                    font-weight: bold;
+                }
+            }
+
+            // single discuss media query.
+            @media all and (min-width: 768px) {
+                flex-wrap: nowrap;
+                div {
+                    width: 80%;
+                }
+            }
+        }
+        .heading {
+            flex-wrap: wrap;
+            div {
+                width: 100%
+            }
+
+            // Heading media query.
+            @media all and (min-width: 768px) {
+                flex-wrap: nowrap;
+                .new-discussion-btn {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: 768px) {
+        flex-wrap: nowrap;
+        .trending {
+            width: 28%;
+            order: 2;
+            margin-top: -170px;
+        }
+        .discussions {
+            width: 68%;
+        }
+    }
+}
