@@ -440,3 +440,74 @@ input[type="checkbox"]:checked ~ .nav-list + .header-btn {
   @media all and (min-width: 768px) {
     .slider .slides > div {
       width: 30%; } }
+
+.content {
+  width: 90%;
+  padding: 2rem 0;
+  flex-wrap: wrap; }
+  .content .trending {
+    width: 100%; }
+    .content .trending h5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #9F9F9F; }
+  .content .single-topic {
+    margin: 10px 0; }
+    .content .single-topic img {
+      width: 35px;
+      height: auto; }
+    .content .single-topic .topic-name {
+      font-size: 15px;
+      font-weight: bold; }
+    .content .single-topic .fire-icon {
+      font-size: 18px;
+      color: yellow; }
+  .content .discussions {
+    width: 100%;
+    margin: 20px 0; }
+    .content .discussions h5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #9F9F9F; }
+    .content .discussions .new-discussion-btn {
+      padding: 12px;
+      color: #FEFEFE;
+      font-weight: bold;
+      background: #261CFA;
+      border-radius: 50px;
+      display: block;
+      width: 100%; }
+    .content .discussions .single-discuss {
+      flex-wrap: wrap;
+      margin: 20px 0; }
+      .content .discussions .single-discuss img {
+        width: 70px; }
+      .content .discussions .single-discuss div {
+        width: 100%;
+        margin: 5px 0; }
+        .content .discussions .single-discuss div p {
+          color: #9F9F9F;
+          font-weight: bold; }
+      @media all and (min-width: 768px) {
+        .content .discussions .single-discuss {
+          flex-wrap: nowrap; }
+          .content .discussions .single-discuss div {
+            width: 80%; } }
+    .content .discussions .heading {
+      flex-wrap: wrap; }
+      .content .discussions .heading div {
+        width: 100%; }
+      @media all and (min-width: 768px) {
+        .content .discussions .heading {
+          flex-wrap: nowrap; }
+          .content .discussions .heading .new-discussion-btn {
+            width: 30%; } }
+  @media all and (min-width: 768px) {
+    .content {
+      flex-wrap: nowrap; }
+      .content .trending {
+        width: 28%;
+        order: 2;
+        margin-top: -170px; }
+      .content .discussions {
+        width: 68%; } }
